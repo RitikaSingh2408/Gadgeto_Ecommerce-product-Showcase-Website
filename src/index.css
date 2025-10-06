@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* clerk user btn adjust */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.cl-avatarBox{
+  width:3rem;
+  height:3rem;
+}
+
+/* carousel arrow  */
+.arrows{
+  height: 40px;
+  width: 40px;
+  margin:1px;
+}
+
+/* inputcolours */
+
+input{
+  background-color: #ffffff;
+  accent-color: rgb(132, 52, 103);
+  border:1px solid #ccc;
+  color:#333;
+}
