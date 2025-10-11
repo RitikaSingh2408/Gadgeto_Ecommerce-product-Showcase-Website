@@ -18,16 +18,16 @@ const Cart = ({location, getLocation}) => {
   const totalPrice = cartItem.reduce((total, item) => total + item.price, 0)
   return (
     <div className='dark:bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]'>
-    <div className='mt-10 max-w-6xl mx-auto mb-5 px-4 md:px-0 '>
+    <div className='mt-10 dark:mt-0 max-w-6xl mx-auto mb-5 dark:mb-0 px-4 md:px-0] '>
       {
         cartItem.length > 0 ? <div>
-          <h1 className='font-bold text-2xl '>My Cart ({cartItem.length})</h1>
+          <h1 className='font-bold text-2xl dark:text-white pt-2'>My Cart ({cartItem.length})</h1>
           <div>
             <div className='mt-10'>
               {cartItem.map((item, index) => {
                 return <div key={index} className='bg-gray-100 p-5 rounded-md flex items-center justify-between mt-3 w-full'>
                   <div className='flex items-center gap-4'>
-                    <img src={item.image} alt={item.title} className='w-20 h-20 rounded-md' />
+                    <img src={item.images} alt={item.title} className='w-20 h-20 rounded-md' />
                     <div>
                       <h1 className='md:w-[300px] line-clamp-2 '>{item.title}</h1>
                       <p className='text-pink-900 font-semibold text-lg'>${item.price}</p>
@@ -44,7 +44,7 @@ const Cart = ({location, getLocation}) => {
                 </div>
               })}
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 md:gap-20 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 md:gap-20 dark:pb-4'>
               <div className='bg-gray-100 rounded-md p-7 mt-4 space-y-2'>
                 <h1 className='text-gray-800 font-bold text-xl'>Delivery Info</h1>
                 <div className='flex flex-col space-y-1'>
@@ -106,7 +106,7 @@ const Cart = ({location, getLocation}) => {
                   <h1 className='font-semibold text-gray-700 mb-3 mt-7'>Apply Promo Code</h1>
                   <div className='flex gap-3'>
                     <input type="text" placeholder='Enter code' className='p-2 rounded-md w-full'/>
-                    <button className='bg-white text-black border border-gray-200 px-4 cursor-pointer py-1 rounded-md'>Apply</button>
+                    <button className='bg-pink-900 text-white border border-gray-200 px-4 cursor-pointer py-1 rounded-md'>Apply</button>
                   </div>
                 </div>
                 <button className='bg-pink-900 text-white px-3 py-2 rounded-md w-full cursor-pointer mt-3'>Proceed to Checkout</button>
@@ -114,7 +114,7 @@ const Cart = ({location, getLocation}) => {
             </div>
           </div>
         </div> : <div className='flex flex-col gap-3 justify-center items-center h-[600px]  '>
-          <h1 className='text-pink-900/80 font-bold text-5xl text-muted'>Oh no! Your cart is empty</h1>
+          <h1 className='text-pink-900/80 font-bold text-5xl text-muted dark:text-pink-800'>Oh no! Your cart is empty</h1>
           <img src={emptyCart} alt="" className='w-[400px]'/>
           <button onClick={()=>navigate('/products')} className='bg-pink-900 hover:bg-pink-700 hover:scale-105 duration-300 transition  text-white px-3 py-2 rounded-md cursor-pointer '>Continue Shopping</button>
         </div>

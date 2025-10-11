@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-4xl font-bold text-center dark:text-gray-200">About Gadgeto</h1>
 
         <p className="text-gray-700 dark:text-gray-300 text-lg">
-          Welcome to <span className="font-semibold text-pink-900 dark:text-pink-900">Gadgeto</span>, your one-stop destination for the latest and greatest in electronics. From cutting-edge gadgets to must-have accessories, we’re here to power up your tech life with premium products and unbeatable service.
+          Welcome to <span className="font-semibold text-pink-900 dark:text-pink-900">Gadgeto</span>, your one-stop destination for the latest and greatest in makeup,furniture and electronics. From cutting-edge gadgets to must-have accessories, we’re here to power up your tech life with premium products and unbeatable service.
         </p>
 
         <div className="space-y-6">
@@ -20,7 +20,7 @@ const About = () => {
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold text-pink-900 dark:text-pink-900">Why Choose Gadgeto?</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-2 dark:text-gray-300">
-            <li>Top-quality electronic products from trusted brands</li>
+            <li>Top-quality products from trusted brands</li>
             <li>Lightning-fast and secure shipping</li>
             <li>Reliable customer support, always ready to help</li>
             <li>Easy returns and hassle-free shopping experience</li>

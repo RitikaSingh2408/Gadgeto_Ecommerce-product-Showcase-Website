@@ -43,10 +43,10 @@ const Navbar = ({location, getLocation, openDropdown, setOpenDropdown}) => {
                 {/* menu section */}
                 <nav data-aos="zoom-in" className='flex gap-7 items-center'>
                     <ul className='md:flex gap-7 items-center text-xl font-semibold hidden'>
-                        <NavLink to={'/'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-105 duration-200 transition-400`}><li>Home</li></NavLink>
-                        <NavLink to={"/products"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-105 duration-200 transition-400`}><li>Products</li></NavLink>
-                        <NavLink to={"/about"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-105 duration-200 transition-400`}><li>About</li></NavLink>
-                        <NavLink to={"/contact"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-105 duration-200 transition-400`}><li>Contact</li></NavLink>
+                        <NavLink to={'/'} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-115 duration-500 transition-600`}><li>Home</li></NavLink>
+                        <NavLink to={"/products"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-115 duration-500 transition-600`}><li>Products</li></NavLink>
+                        <NavLink to={"/about"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-115 duration-500 transition-600`}><li>About</li></NavLink>
+                        <NavLink to={"/contact"} className={({ isActive }) => `${isActive ? "border-b-3 transition-all border-pink-900 dark:border-pink-400" : "text-black"} cursor-pointer dark:text-white hover:scale-115 duration-500 transition-600`}><li>Contact</li></NavLink>
                     </ul>
                     <Link to={'/cart'} className='relative'>
                         <IoCartOutline className='h-7 w-7 dark:text-purple-400' />

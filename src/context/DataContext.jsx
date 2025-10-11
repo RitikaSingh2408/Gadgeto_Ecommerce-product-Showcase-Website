@@ -9,10 +9,10 @@ export const DataProvider = ({ children }) => {
     // fetching all products from api
     const fetchAllProducts = async () => {
         try {
-           const res = await axios.get('https://fake-store-api.mock.beeceptor.com')
+           const res = await axios.get('https://dummyjson.com/products?limit=100')
            console.log(res);
-           const productsData = res.data.products
-           setData(productsData)
+          
+           setData(res.data.products)
            
         } catch (error) {
             console.log(error);

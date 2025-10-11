@@ -6,7 +6,8 @@ import Pagination from '../components/Pagination'
 import Lottie from 'lottie-react'
 import notfound from "../assets/notfound.json"
 import MobileFilter from '../components/MobileFilter'
-import Productcard from '../components/Productcard'
+import ProductCard from '../components/Productcard'
+
 
 const Products = () => {
   const { data, fetchAllProducts } = getData()
@@ -51,7 +52,7 @@ const Products = () => {
 
   return (
     <div className='dark:bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]'>
-      <div className='max-w-6xl mx-auto px-4 mb-10 '>
+      <div className='max-w-6xl mx-auto mb-10 dark:mb-0 px-4  '>
         <MobileFilter openFilter={openFilter} setOpenFilter={setOpenFilter} search={search} setSearch={setSearch} brand={brand} setBrand={setBrand} priceRange={priceRange} setPriceRange={setPriceRange} category={category} setCategory={setCategory} handleCategoryChange={handleCategoryChange} handleBrandChange={handleBrandChange}/>
         {
           data?.length > 0 ? (
@@ -63,8 +64,8 @@ const Products = () => {
                     <div className='flex flex-col justify-center items-center'>
                       <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-7 mt-10'>
                         {
-                          filteredData?.slice(page * 8 - 8, page * 8).map((product, index) => {
-                            return <Productcard key={index} product={product} />
+                          filteredData?.slice(page * 8 - 8, page * 8).map((product_Id, index) => {
+                            return <ProductCard key={index} product={product_Id} />
                           })
                         }
                       </div>
